@@ -2,12 +2,12 @@
 
 /* css variables */
 :root {
-  --header-height: 3rem;
+  --header-height: 4rem;
 
   --hue-color: 219;
 
   /* hsl color */
-  --first-color: hsl(var(--hue-color), 21%, 16%);
+  --first-color: hsl(var(--hue-color), 21%, 30%);
   --first-color-second: hsl(var(--hue-color), 21%, 16%);
   --first-color-alt: hsl(var(--hue-color), 15%, 6%);
   --first-color-lighter: hsl(var(--hue-color), 44%, 36%);
@@ -15,8 +15,8 @@
   --text-color: hsl(var(--hue-color), 8%, 10%);
   --text-color-light: hsl(var(--hue-color), 8%, 14%);
   --input-color: hsl(var(--hue-color), 25%, 36%);
-  --body-color: hsl(var(--hue-color), 20%, 56%);
-  --container-color: #dddddd;
+  --body-color: hsl(var(--hue-color), 0%, 87%);
+  --container-color: hsl(0, 0%, 87%);
   --scroll-bar-color: hsl(var(--hue-color), 20%, 80%);
   --scroll-thumb-color: hsl(var(--hue-color), 20%, 70%);
 
@@ -177,6 +177,11 @@ img {
   color: var(--first-color);
 }
 
+.nav__logo img {
+  width: 4rem;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -192,6 +197,7 @@ img {
 }
 
 .nav__list {
+  margin-top: 2rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
@@ -271,12 +277,12 @@ img {
 }
 
 .home__blob {
-  width: 200px;
+  width: 220px;
   fill: var(--first-color);
 }
 
 .home__blob-img {
-  width: 170px;
+  width: 190px;
 }
 
 .home__data {
@@ -358,12 +364,12 @@ img {
   width: 200px;
   border-radius: 0.5rem;
   justify-self: center;
-  align-self: center;
+  /* align-self: center; */
 }
 
 .about__description {
-  text-align: center;
   margin-bottom: var(--mb-2-5);
+  text-align: center;
 }
 
 .about__info {
@@ -448,7 +454,7 @@ img {
 }
 
 .skills__bar {
-  background-color: var(--first-color-lighter);
+  background-color: var(--first-color-alt);
 }
 
 .skills__percentage {
@@ -711,7 +717,7 @@ img {
 /* Media Queries */
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 350px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -730,7 +736,9 @@ img {
   }
 
   .home__blob {
-    width: 180px;
+    width: 250px;
+    margin-top: -2rem;
+    margin-bottom: -6rem;
   }
 
   .skills__title {
@@ -762,6 +770,7 @@ img {
   }
 
   .about__container,
+  .skills__container,
   .portfolio__content,
   .contact__container,
   .footer__container {
@@ -829,7 +838,7 @@ img {
   }
 
   .home__content {
-    padding-top: 5.5rem;
+    padding-top: 3.5rem;
     column-gap: 2rem;
   }
 
@@ -854,7 +863,7 @@ img {
   }
 
   .about__description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .about__info {
@@ -915,7 +924,9 @@ img {
   }
 
   .home__blob {
-    width: 320px;
+    width: 250px;
+    margin-top: -3rem;
+    margin-bottom: -2rem;
   }
 
   .home__social {

@@ -22,7 +22,9 @@
     <!-- ========================== header ========================== -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="" class="nav__logo"> Zi </a>
+        <a href="" class="nav__logo">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -86,42 +88,14 @@
             </div>
 
             <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="12"
-                    y="18"
-                    href="assets/img/perfil.png"
-                  />
-                </g>
-              </svg>
+              <img src="assets/img/logo.png" class="home__blob" alt="" />
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Hi, I'm Furqan</h1>
+              <h1 class="home__title">F. Nasser</h1>
               <h3 class="home__subtitle">Fullstack Developer</h3>
               <p class="home__description">
-                Lorem ipsum dolor, sit amet consectetur adipisicin!
+                Part-time web developer, full-time tech enthusiast
               </p>
               <a href="#" class="button button--flex">
                 Reach me <i class="uil uil-message button__icon"></i>
@@ -142,20 +116,23 @@
       <!-- ========================== about ========================== -->
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My Introduction</span>
+        <span class="section__subtitle">Introduction</span>
 
         <div class="about__container container grid">
-          <img src="assets/img/about.jpg" alt="" class="about__img" />
+          <img src="assets/img/me.png" alt="" class="about__img" />
 
           <div class="about__data">
             <p class="about__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              sed quisquam accusantium qui.
+              Studied an engineering major but had the privilege to work on few
+              website projects during my time as a full-time college student. I
+              also have experience on building apps and designing UI/UX. I like
+              making design and currently striving for an even better taste for
+              design.
             </p>
 
             <div class="about__info">
               <div>
-                <span class="about__info-title">08+</span>
+                <span class="about__info-title">02+</span>
                 <span class="about__info-name"
                   >Years <br />
                   experience</span
@@ -163,7 +140,7 @@
               </div>
 
               <div>
-                <span class="about__info-title">20+</span>
+                <span class="about__info-title">09+</span>
                 <span class="about__info-name"
                   >Completed <br />
                   projects</span
@@ -171,7 +148,7 @@
               </div>
 
               <div>
-                <span class="about__info-title">05+</span>
+                <span class="about__info-title">00+</span>
                 <span class="about__info-name"
                   >Companies <br />
                   worked</span
@@ -180,7 +157,11 @@
             </div>
 
             <div class="about__buttons">
-              <a download="" href="#" class="button button--flex">
+              <a
+                download=""
+                href="assets/pdf/Furqan Nasser CV.pdf"
+                class="button button--flex"
+              >
                 Download Resume
                 <i class="uil uil-download-alt button__icon"></i>
               </a>
@@ -192,7 +173,7 @@
       <!-- ========================== skills ========================== -->
       <section class="skills section" id="skills">
         <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My Technical Level</span>
+        <span class="section__subtitle">Technical Level</span>
 
         <div class="skills__container container grid">
           <div>
@@ -252,60 +233,59 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- ========================== skills backend ========================== -->
+          <!-- ========================== skills backend ========================== -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-server-alt skills__icon"></i>
 
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="uil uil-server-alt skills__icon"></i>
-
-                <div>
-                  <h1 class="skills__title">Backend developer</h1>
-                  <span class="skills__subtitle">More than 2 years</span>
-                </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
+              <div>
+                <h1 class="skills__title">Backend developer</h1>
+                <span class="skills__subtitle">More than 2 years</span>
               </div>
 
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">PHP</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__php"></span>
-                  </div>
-                </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
 
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Node Js</h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__node"></span>
-                  </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PHP</h3>
+                  <span class="skills__number">90%</span>
                 </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Firebase</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__firebase"></span>
-                  </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__php"></span>
                 </div>
+              </div>
 
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__python"></span>
-                  </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Node Js</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__node"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Firebase</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__firebase"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__python"></span>
                 </div>
               </div>
             </div>
@@ -317,7 +297,7 @@
 
       <section class="qualification section" id="qualification">
         <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My Personal Journey</span>
+        <span class="section__subtitle">Personal Journey</span>
 
         <div class="qualification__container container">
           <div class="qualification__tabs">
@@ -347,11 +327,15 @@
             >
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Engineering Physics</h3>
-                  <span class="qualification__subtitle">ITS</span>
+                  <h3 class="qualification__title">
+                    Elementary School Graduate
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Al-Azhar Private Elementary School</span
+                  >
                   <div class="qualification__calendar">
                     <i class="uil uil-schedule"></i>
-                    2017-2021
+                    2006-2011
                   </div>
                 </div>
 
@@ -361,17 +345,68 @@
                 </div>
               </div>
 
+              <div>
+                <span class="qualification__line"></span>
+              </div>
               <div class="qualification__data">
                 <div></div>
 
                 <div>
                   <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
+                  <span class="qualification__line"></span>
                 </div>
 
                 <div>
-                  <h3 class="qualification__title">High School Science</h3>
-                  <span class="qualification__subtitle">103</span>
+                  <h3 class="qualification__title">
+                    Junior High School Graduate
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Al-Azhar Private Junior High School</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-schedule"></i>
+                    2011-2014
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Senior High School Graduate
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >103 Public Senior High School</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-schedule"></i>
+                    2014-2017
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__line"></span>
+              </div>
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Engineering Physics Bachelor's Degree
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Sepuluh Nopember Institute of Technology</span
+                  >
                   <div class="qualification__calendar">
                     <i class="uil uil-schedule"></i>
                     2017-2021
@@ -383,11 +418,13 @@
             <div class="qualification__content" data-content id="experience">
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">SPE</h3>
-                  <span class="qualification__subtitle">ITS</span>
+                  <h3 class="qualification__title">Web Dev Division</h3>
+                  <span class="qualification__subtitle"
+                    >Embedded and Cyber-Physical System Laboratory</span
+                  >
                   <div class="qualification__calendar">
                     <i class="uil uil-schedule"></i>
-                    2017-2021
+                    2018-2021
                   </div>
                 </div>
 
@@ -397,20 +434,65 @@
                 </div>
               </div>
 
+              <div>
+                <span class="qualification__line"></span>
+              </div>
               <div class="qualification__data">
                 <div></div>
 
                 <div>
                   <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
+                  <span class="qualification__line"></span>
                 </div>
 
                 <div>
-                  <h3 class="qualification__title">High School Science</h3>
-                  <span class="qualification__subtitle">103</span>
+                  <h3 class="qualification__title">Web Programming</h3>
+                  <span class="qualification__subtitle"
+                    >Evits Ventilator ITS Team</span
+                  >
                   <div class="qualification__calendar">
                     <i class="uil uil-schedule"></i>
-                    2017-2021
+                    2020
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    AWS Cloud Foundation Trainee
+                  </h3>
+                  <span class="qualification__subtitle">AWS Academy</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-schedule"></i>
+                    2021
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__line"></span>
+              </div>
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    AWS Cloud Developing Trainee
+                  </h3>
+                  <span class="qualification__subtitle">AWS Academy</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-schedule"></i>
+                    2021
                   </div>
                 </div>
               </div>
@@ -522,7 +604,7 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h1 class="footer__title">Something</h1>
+            <h1 class="footer__title">Nasserf</h1>
             <span class="footer__subtitle">Fullstack Developer</span>
           </div>
 
