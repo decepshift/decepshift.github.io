@@ -10,7 +10,7 @@
   --first-color: hsl(var(--hue-color), 21%, 30%);
   --first-color-second: hsl(var(--hue-color), 21%, 16%);
   --first-color-alt: hsl(var(--hue-color), 15%, 6%);
-  --first-color-lighter: hsl(var(--hue-color), 44%, 36%);
+  --first-color-lighter: hsl(var(--hue-color), 21%, 74%);
   --title-color: hsl(var(--hue-color), 8%, 7%);
   --text-color: hsl(var(--hue-color), 8%, 10%);
   --text-color-light: hsl(var(--hue-color), 8%, 14%);
@@ -454,7 +454,7 @@ img {
 }
 
 .skills__bar {
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-lighter);
 }
 
 .skills__percentage {
@@ -463,7 +463,43 @@ img {
 }
 
 .skills__html {
-  width: 90%;
+  width: 87%;
+}
+
+.skills__css {
+  width: 63%;
+}
+
+.skills__js {
+  width: 52%;
+}
+
+.skills__react {
+  width: 46%;
+}
+
+.skills__reactn {
+  width: 38%;
+}
+
+.skills__bootstrap {
+  width: 65%;
+}
+
+.skills__php {
+  width: 85%;
+}
+
+.skills__cn {
+  width: 48%;
+}
+
+.skills__firebase {
+  width: 34%;
+}
+
+.skills__laravel {
+  width: 44%;
 }
 
 .skills__close .skills__list {
@@ -548,7 +584,7 @@ img {
   display: block;
 }
 
-.qualification__button .qualification__active {
+.qualification__tabs .qualification__active {
   color: var(--first-color);
 }
 
@@ -611,6 +647,41 @@ img {
 .swiper-button-next,
 .swiper-pagination-bullet {
   outline: none;
+}
+
+/* contactme */
+
+.contact__container {
+  row-gap: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.contact__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact__content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
 }
 
 /* footer */
@@ -772,7 +843,6 @@ img {
   .about__container,
   .skills__container,
   .portfolio__content,
-  .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -950,7 +1020,7 @@ img {
   }
 
   .swiper-horizontal > .swiper-pagination-bullets {
-    /* bottom: -4.5rem; */
+    bottom: -4.5rem;
   }
 
   .contact__form {
